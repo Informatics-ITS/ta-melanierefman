@@ -1,52 +1,98 @@
 # 🏁 Tugas Akhir (TA) - Final Project
 
-**Nama Mahasiswa**: [Nama Lengkap]  
-**NRP**: [Nomor Registrasi Pokok]  
-**Judul TA**: [Judul Tugas Akhir]  
-**Dosen Pembimbing**: [Nama Dosen]  
-**Dosen Ko-pembimbing**: [Nama Dosen]
+**Nama Mahasiswa**: Melanie Sayyidina Sabrina Refman <br>
+**NRP**: 5025211029 <br>
+**Judul TA**: Rancangan Bangun Aplikasi Web Sistem Informasi Kelompok Riset Iklim dan Lingkungan Masa Lampau BRIN Menggunakan Arsitektur Monolitik <br>
+**Dosen Pembimbing**: Ir. Siti Rochimah, MT., Ph.D. <br>
+**Dosen Ko-pembimbing**: Bintang Nuralamsyah, S.Kom, M.Kom.
 
 ---
 
 ## 📺 Demo Aplikasi  
-Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):  
 
 [![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)  
 *Klik gambar di atas untuk menonton demo*
 
 ---
 
-*Konten selanjutnya hanya merupakan contoh awalan yang baik. Anda dapat berimprovisasi bila diperlukan.*
+## 🛠 Panduan Instalasi & Menjalankan Aplikasi
 
-## 🛠 Panduan Instalasi & Menjalankan Software  
+### Prasyarat
 
-### Prasyarat  
-- Daftar dependensi (contoh):
-  - Python 3.10+
-  - Node.js v18+
-  - MySQL 8.0
-  - [Lainnya...]
+* **Node.js** v18+
+* **PHP** v8.2+
+* **Composer**
+* **MySQL** v8.0+
+* **Git**
+* **Visual Studio Code** (opsional tapi disarankan)
 
-### Langkah-langkah  
-1. **Clone Repository**  
+---
+
+### Langkah-langkah Instalasi
+
+1. **Clone Repository**
+
    ```bash
-   git clone https://github.com/Informatics-ITS/TA.git
+   git clone https://github.com/Informatics-ITS/ta-melanierefman.git
+   cd ta-melanierefman
    ```
+
 2. **Instalasi Dependensi**
+
+   * **Laravel (Backend)**
+
+     ```bash
+     composer install
+     ```
+   * **React + Vite (Frontend)**
+
+     ```bash
+     npm install
+     ```
+
+3. **Konfigurasi Environment**
+
+   * Salin file `.env.example` menjadi `.env`
+
+     ```bash
+     cp .env.example .env
+     ```
+   * Atur variabel database dan lainnya di file `.env`
+   * Generate application key
+
+     ```bash
+     php artisan key:generate
+     ```
+
+4. **Persiapan Storage**
+
    ```bash
-   cd [folder-proyek]
-   pip install -r requirements.txt  # Contoh untuk Python
-   npm install  # Contoh untuk Node.js
+   php artisan storage:link
    ```
-3. **Konfigurasi**
-- Salin/rename file .env.example menjadi .env
-- Isi variabel lingkungan sesuai kebutuhan (database, API key, dll.)
-4. **Jalankan Aplikasi**
+
+5. **Migrasi dan Seed Database**
+
    ```bash
-   python main.py  # Contoh untuk Python
-   npm start      # Contoh untuk Node.js
+   php artisan migrate --seed
    ```
-5. Buka browser dan kunjungi: `http://localhost:3000` (sesuaikan dengan port proyek Anda)
+
+6. **Menjalankan Aplikasi**
+
+   * Jalankan backend Laravel:
+
+     ```bash
+     php artisan serve
+     ```
+   * Jalankan frontend React + Vite:
+
+     ```bash
+     npm run dev
+     ```
+
+7. **Akses Aplikasi di Browser**
+
+   * Laravel API / Backend: `http://localhost:8000`
+   * Frontend (via Vite): biasanya di `http://localhost:5173`
 
 ---
 
@@ -58,18 +104,8 @@ Embed video demo di bawah ini (ganti `VIDEO_ID` dengan ID video YouTube Anda):
 
 ---
 
-## ✅ Validasi
-
-Pastikan proyek memenuhi kriteria berikut sebelum submit:
-- Source code dapat di-build/run tanpa error
-- Video demo jelas menampilkan fitur utama
-- README lengkap dan terupdate
-- Tidak ada data sensitif (password, API key) yang ter-expose
-
----
-
 ## ⁉️ Pertanyaan?
 
 Hubungi:
-- Penulis: [email@mahasiswa]
-- Pembimbing Utama: [email@pembimbing]
+- Penulis: 5025211029@student.its.ac.id
+- Pembimbing Utama: siti@its.ac.id
