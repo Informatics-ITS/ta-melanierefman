@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /admin/
+Disallow: /users/login
+Disallow: /api/
+
+Allow: /id/
+Allow: /en/
+
+Sitemap: https://kr-paleo-brin.com/sitemap.xml

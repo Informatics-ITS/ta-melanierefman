@@ -1,0 +1,100 @@
+const flowbite = require("flowbite-react/tailwind");
+const flowbitePlugin = require("flowbite/plugin");
+
+/** @type {import('tailwindcss').Config} */
+module.exports = {
+  content: [
+    "./src/**/*.{html,js,ts,jsx,tsx}",
+    "node_modules/flowbite/**/*.js",
+    "node_modules/flowbite-react/**/*.js",
+    flowbite.content(),
+  ],
+  theme: {
+    extend: {
+      fontFamily: {
+        'work-sans': ['Work Sans', 'sans-serif'],
+        'dm-sans': ['DM Sans', 'sans-serif'],
+      },
+      colors: {
+        typo: '#191919',
+        'typo-white' : '#FFFFFF',
+        'typo-white2': '#F6F4F3',
+        'typo-surface': '#F7F7F7',
+        'typo-light': '#F2F2F2',
+        'typo-outline': '#ECECEC',
+        'typo-inline': '#DFDFDF',
+        'typo-icon': '#9F9F9F',
+        'typo-secondary': '#666666',
+
+        primary: '#B10F2E',
+        'primary-0' : '#FED6D8',
+        'primary-10' : '#E5AFB9',
+        'primary-20' : '#D88796',
+        'primary-30' : '#CB5F74',
+        'primary-40' : '#FFFFFF',
+        'primary-60' : '#CF2A32',
+        'primary-70' : '#760A1F',
+        'primary-80' : '#580717',
+        'primary-90' : '#3B050F',
+        'primary-100' : '#230309',
+
+        secondary: '#276FBF',
+        'secondary-0' : '#D4E2F2',
+        'secondary-10' : '#B7CFEA',
+        'secondary-20' : '#93B7DF',
+        'secondary-30' : '#6F9FD4',
+        'secondary-40' : '#4B87CA',
+        'secondary-60' : '#205C9F',
+        'secondary-70' : '#1A4A7F',
+        'secondary-80' : '#13375F',
+        'secondary-90' : '#0D2540',
+        'secondary-100' : '#081626',
+
+        success: '#00AF54',
+        'success-0': '#CCEFDD',
+        'success-10': '#AAE4C6',
+        'success-20': '#80D7A9',
+        'success-30': '#55CA8D',
+        'success-40': '#2ABC70',
+        'success-60': '#009246',
+        'success-70': '#007538',
+        'success-80': '#00572A',
+        'success-90': '#003A1C',
+        'success-100': '#002311',
+
+        critical: '#F8333C',
+        'critical-0' : '#002311',
+        'critical-10' : '#FDBBBE',
+        'critical-20' : '#FB999D',
+        'critical-30' : '#FA777D',
+        'critical-40' : '#F9555C',
+        'critical-50' : '#002311',
+        'critical-60' : '#CF2A32',
+        'critical-70' : '#A52228',
+        'critical-80' : '#7C191E',
+        'critical-90' : '#531114',
+        'critical-100' : '#320A0C',
+
+        warning: '#FEC601',
+        'warning-0' : '#FFF4CC',
+        'warning-10' : '#FFECAA',
+        'warning-20' : '#FEE280',
+        'warning-30' : '#FED956',
+        'warning-40' : '#FECF2B',
+        'warning-50' : '#FEC601',
+        'warning-60' : '#D4A501',
+        'warning-70' : '#A98401',
+        'warning-80' : '#7F6300',
+        'warning-90' : '#554200',
+        'warning-100' : '#332800',
+      }
+    },
+  },
+  plugins: [
+    require("flowbite/plugin"),
+    require("flowbite-typography"),
+    flowbitePlugin({
+      wysiwyg: true,
+    }),
+  ],
+};

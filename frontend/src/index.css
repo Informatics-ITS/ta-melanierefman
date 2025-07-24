@@ -1,0 +1,23 @@
+@import 'flowbite';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .tiptap-editor h6 {
+        @apply text-base md:text-lg font-work-sans font-semibold mb-2;
+    }
+    .tiptap-editor a {
+        @apply text-secondary underline hover:text-secondary-70;
+    }
+    .tiptap-editor p {
+        @apply text-sm md:text-base font-dm-sans;
+    }
+    .tiptap-editor p:empty {
+        @apply block my-4;
+    }
+    .tiptap-editor li {
+        @apply font-dm-sans ml-4;
+    }
+}
