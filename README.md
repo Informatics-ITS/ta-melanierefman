@@ -10,7 +10,7 @@
 
 ## 📺 Demo Aplikasi  
 
-[![Demo Aplikasi](https://i.ytimg.com/vi/zIfRMTxRaIs/maxresdefault.jpg)](https://www.youtube.com/watch?v=VIDEO_ID)  
+[![Demo Aplikasi](https://github.com/user-attachments/assets/0193fc18-c75f-4705-8818-725c0c1653a5)](https://www.youtube.com/watch?v=VIDEO_ID)  
 *Klik gambar di atas untuk menonton demo*
 
 ---
@@ -98,9 +98,14 @@
 
 ## 📚 Dokumentasi Tambahan
 
-- [![Dokumentasi API]](docs/api.md)
-- [![Diagram Arsitektur]](docs/architecture.png)
-- [![Struktur Basis Data]](docs/database_schema.sql)
+### Diagram Arsitektur
+[![Diagram Arsitektur](https://github.com/user-attachments/assets/c1b10cbc-6cbf-4176-ba54-d671a4d3e679)](https://github.com/user-attachments/assets/c1b10cbc-6cbf-4176-ba54-d671a4d3e679)
+
+### Struktur Basis Data
+[![Diagram Arsitektur](https://github.com/user-attachments/assets/98b58559-5f23-43bb-8e27-0faf5dee9140)](https://github.com/user-attachments/assets/98b58559-5f23-43bb-8e27-0faf5dee9140)
+
+### Poster
+[![Poster Tugas Akhir](https://github.com/user-attachments/assets/dd733cc1-2323-4e8a-a179-be99b16a90d7)](https://github.com/user-attachments/assets/dd733cc1-2323-4e8a-a179-be99b16a90d7)
 
 ---
 
